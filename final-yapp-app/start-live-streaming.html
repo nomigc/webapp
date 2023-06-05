@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>live page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body class="live_body">
+<div class="body-hide"></div>
+    <!-- header-start -->
+    <div class="container-fluid grey-header">
+        <div class="container">
+		
+		<div class="row align-items-center">
+                <div class="col-1 live-header-backwardIcon">
+                    <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="col-lg-5 co-10 live-user-name">
+                    <p>Live_title_0110202010020101</p>
+                    <p>Category</p>
+                </div>
+                <div class="col-lg-auto ms-lg-auto mt-2 mb-2">
+                    <div class="d-flex justify-content-evenly gap-3">
+                        <button class="btn live-header-button rounded-pill" data-bs-toggle="modal" data-bs-target="#sharepop">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                                <defs>
+                                    <clipPath id="clip-path">
+                                        <rect id="Rectangle_231" data-name="Rectangle 231" width="20.25" height="16.991" transform="translate(0 0)" fill="none"></rect>
+                                    </clipPath>
+                                </defs>
+                                <g id="Share_outline_24" transform="translate(-19 -649)" fill="#ffffff">
+                                    <rect id="Rectangle_178" data-name="Rectangle 178" width="24" height="24" transform="translate(19 649)" fill="#ff8080" opacity="0"></rect>
+                                    <g id="Group_235" data-name="Group 235" transform="translate(20.875 652.504)">
+                                        <g id="Group_234" data-name="Group 234" clip-path="url(#clip-path)">
+                                            <path id="Path_305" data-name="Path 305" d="M19.532,5.126,15,.6A1.745,1.745,0,0,0,13.789,0c-.57,0-1.237.423-1.237,1.614V3.037A13.263,13.263,0,0,0,0,16.28a.708.708,0,0,0,.486.674.685.685,0,0,0,.225.037.717.717,0,0,0,.569-.283,14.914,14.914,0,0,1,11.272-5.976V12.12c0,1.192.667,1.614,1.237,1.614a1.742,1.742,0,0,0,1.215-.6l4.527-4.528a2.469,2.469,0,0,0,0-3.482M13.263,9.294a16.227,16.227,0,0,0-7.45,1.787,16.437,16.437,0,0,0-4.2,3.072A11.91,11.91,0,0,1,13.263,4.44a.712.712,0,0,0,.711-.71V1.581A.188.188,0,0,1,14,1.606l4.528,4.527a1.045,1.045,0,0,1,0,1.469L14,12.13a.188.188,0,0,1-.025.024V10.005a.712.712,0,0,0-.711-.711">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="ps-2 shareSpanLive">Share</span>
+                        </button>
+                        <button class="btn live-header-button rounded-pill redStop" data-bs-toggle="modal" data-bs-target="#endstreaming">Stop Live!
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal streaming -->
+                <div class="modal fade" id="endstreaming" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content start-Popup-MarginTop">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="Images/videocam.png" alt="" width="60px">
+                                <h5 class="pt-3 steamingText">Are you sure to end streaming?</h5>
+
+                                <div class="d-flex gap-lg-2 pb-2 text-center mt-3">
+                                    <div class="live-btn col-lg-6 pt-3">
+                                        <a href="end-live.html" class="text-decoration-none streamingpopbtn text-white rounded-5 d-block btn">End
+                                            Streaming
+                                        </a>
+                                    </div>
+                                    <div class="live-btn col-lg-6 pt-3">
+                                        <button class="text-decoration-none stopButtonpop animation-cancel rounded-5 d-block btn">Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal streaming end-->
+
+               
+            </div>
+		
+		
+       
+            </div></div>
+    
+	
+	</div>
+    <!-- header end -->
+ <!-- Modal share-->
+                <div class="modal fade" id="sharepop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content start-Popup-MarginTop">
+                            <div class="modal-header">
+                                <h5 class="modal-title startPop-Title" id="exampleModalLabel">Share Profile</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>URL</h6>
+                                <div class="d-flex align-items-center justify-content-between align-items-center">
+
+                                    <input type="text" name="" id="" placeholder="http://example.com/1/1/1/1/1" class="start-pop-radius">
+
+                                    <a href="">
+                                        <svg id="content_copy_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <g id="Group_800" data-name="Group 800" fill="#747474">
+                                                <rect id="Rectangle_609" data-name="Rectangle 609" width="24" height="24" fill="none"></rect>
+                                            </g>
+                                            <g id="Group_801" data-name="Group 801" fill="#747474">
+                                                <path id="Path_799" data-name="Path 799" d="M15,20H5V7A1,1,0,0,0,4,6H4A1,1,0,0,0,3,7V20a2.006,2.006,0,0,0,2,2H15a1,1,0,0,0,1-1h0A1,1,0,0,0,15,20Zm5-4V4a2.006,2.006,0,0,0-2-2H9A2.006,2.006,0,0,0,7,4V16a2.006,2.006,0,0,0,2,2h9A2.006,2.006,0,0,0,20,16Zm-2,0H9V4h9Z"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                                <div class="d-flex pt-2 pb-2">
+                                    <a href="" class="d-flex align-items-center facebook-pop-start col-lg-6 gap-2">
+                                        <i class="fa-solid fa-circle circel-start-pop"></i>
+                                        <h5 class="mb-0">Facebook</h5>
+                                    </a>
+                                    <a href="" class="d-flex align-items-center facebook-pop-start col-lg-6 gap-2">
+                                        <i class="fa-solid fa-circle circel-start-pop"></i>
+                                        <h5 class="mb-0">Twitter</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal share end-->
+
+    <div class="container main-container mt-3">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="overflow-hidden streaming-main-pictrue">
+                    <img src="Images/live.png" alt="" width="100%">
+                </div>
+				<div class="stream-bg-grey  mt-3">
+                <div class="d-md-flex  align-items-center gap-md-5">
+                    <div class="streaming-user d-flex gap-3">
+                        <div class="overflow-hidden stream-radius-fifty">
+                            <img src="Images/blond-girls.png" alt="">
+                        </div>
+                        <div>
+                            <h5>User0001</h5>
+                            <h6 class="text-white small-title mb-1">ID:12345678</h6>
+							<div class="bio-vf">
+			Lorem ipsum dolor sit amet. <a href="#" class="text-white border-bottom">more</a></div>
+                        </div>
+						
+                    </div>
+                    <div class="streaming-user-information d-flex gap-3 justify-content-between mt-2 mb-2">
+                        <div>
+                            <h5>9,999</h5>
+                            <h6 class="text-white small-title">Follower</h6>
+                        </div>
+                        <div>
+                            <h5>9,999</h5>
+                            <h6 class="text-white small-title">Following</h6>
+                        </div>
+                        <div>
+                            <h5>9,999</h5>
+                            <h6 class="text-white small-title">Sending</h6>
+                        </div>
+                        <div>
+                            <h5>9,999,999</h5>
+                            <h6 class="text-white small-title">Income</h6>
+                        </div>
+                    </div>
+                    
+                </div>
+				</div>
+				<div class="row short-info-head">
+					<div class="col-xl-4 mt-3">
+					  <div class="donate h-full">
+                        <div class="d-flex justify-content-between align-items-center ps-2">
+                            <p>VIP Donate (7)</p>
+                            <a href="#" class="btn text-white">
+                                View all
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-evenly pb-2 pt-1">
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="user-sm-dp mb-1"><img src="Images/blond-girls.png" alt=""></div>
+                                <span>User0001</span>
+                                <span>1,000 coin</span>
+                            </a>
+
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="user-sm-dp mb-1"><img src="Images/blond-girls.png" alt=""></div>
+                                <span>User0001</span>
+                                <span>1,000 coin</span>
+                            </a>
+
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                 <div class="user-sm-dp mb-1"><img src="Images/blond-girls.png" alt=""></div>
+                                <span>User0001</span>
+                                <span>1,000 coin</span>
+                            </a>
+
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                 <div class="user-sm-dp mb-1"><img src="Images/blond-girls.png" alt=""></div>
+                                <span>User0001</span>
+                                <span>1,000 coin</span>
+                            </a>
+                        </div>
+                    </div>
+					</div>
+					
+					<div class="col-xl-4 mt-3">
+					  <div class="donate h-full">
+                        <div class="d-flex justify-content-between align-items-center ps-2">
+                            <p>Sender (7)</p>
+                            <a href="#" class="btn text-white">
+                                View all
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-evenly pb-2 pt-1">
+                            <div class="senderpoints">
+							<a href="" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								<div class="pink-dog position-relative">
+                                <img src="Images/pink-dog.png" alt="" class="EndRemove_border">
+                                <div class="sender-dp-pro"><img src="Images/blond-girls.png" alt="" width="24px" height="24px"></div>
+								</div>
+								<div class="thirty_rose user-coin">
+                               <div> User001</div>
+
+                                <span>x30 Rose</span>
+                            </div>
+							</a>
+							</div>
+
+                            <div class="senderpoints">
+							<a href="" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								<div class="pink-dog position-relative">
+                                <img src="Images/pink-dog.png" alt="" class="EndRemove_border">
+                                <div class="sender-dp-pro"><img src="Images/blond-girls.png" alt="" width="24px" height="24px"></div>
+								</div>
+								<div class="thirty_rose user-coin">
+                               <div> User001</div>
+
+                                <span>x30 Rose</span>
+                            </div>
+							</a>
+							</div>
+
+                            <div class="senderpoints">
+							<a href="" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								<div class="pink-dog position-relative">
+                                <img src="Images/pink-dog.png" alt="" class="EndRemove_border">
+                                <div class="sender-dp-pro"><img src="Images/blond-girls.png" alt="" width="24px" height="24px"></div>
+								</div>
+								<div class="thirty_rose user-coin">
+                               <div> User001</div>
+
+                                <span>x30 Rose</span>
+                            </div>
+							</a>
+							</div>
+							<div class="senderpoints">
+							<a href="" class="text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								<div class="pink-dog position-relative">
+                                <img src="Images/pink-dog.png" alt="" class="EndRemove_border">
+                                <div class="sender-dp-pro"><img src="Images/blond-girls.png" alt="" width="24px" height="24px"></div>
+								</div>
+								<div class="thirty_rose user-coin">
+                               <div> User001</div>
+
+                                <span>x30 Rose</span>
+                            </div>
+							</a>
+							</div>
+                        </div>
+                    </div>
+					</div>
+					<div class="col-xl-4 mt-3">
+					  <div class="donate h-full">
+                        <div class="d-flex justify-content-between align-items-center ps-2">
+                            <p>Viewer (999)</p>
+                            <a href="#" class="btn text-white">
+                                View all
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-evenly pb-2 pt-1">
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="Images/blond-girls.png" alt="">
+                                <span>User0001</span>
+                              
+                            </a>
+
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="Images/blond-girls.png" alt="">
+                                <span>User0001</span>
+                             
+                            </a>
+
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="Images/blond-girls.png" alt="">
+                                <span>User0001</span>
+                               
+                            </a>
+
+                            <a href="" class="user-coin d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="Images/blond-girls.png" alt="">
+                                <span>User0001</span>
+                           
+                            </a>
+                        </div>
+                    </div>
+					</div>
+					
+					
+				</div>
+			
+			</div>
+            <!-- Modal -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pt-0">
+                            <div class="d-flex align-items-center justify-content-evenly">
+                                <div class="overflow-hidden stream-radius-fifty">
+                                    <img src="Images/Cosplay VJ.png" alt="" width="118px" height="118px">
+                                </div>
+                                <div class="portfolio-popup">
+                                    <h2>User002</h2>
+                                    <div class="d-flex gap-1">
+                                        <button class="portfolio-para rounded-5 btn d-flex text-white">ID :
+                                            1234567890</button>
+                                        <button
+                                            class="portfolio-para rounded-5 align-items-center btn d-flex text-white"><span><i
+                                                    class="fa-solid fa-user"></i></span>17</button>
+                                        <button
+                                            class="portfolio-para rounded-5 align-items-center btn d-flex text-white"><span><i
+                                                    class="fa-solid fa-microphone"></i></span>7</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center gap-5">
+                                <div class="user-pop-follower">
+                                    <p>9,999</p>
+                                    <p>Follower</p>
+                                </div>
+                                <div class="user-pop-follower">
+                                    <p>9,999</p>
+                                    <p>Following</p>
+                                </div>
+                            </div>
+                            <div class="follow-click-followed d-flex align-items-center justify-content-evenly">
+                                <button class="btn live-follow-button rounded-pill mt-3 user-pop-follow-btn">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span class="ps-2">Follow</span>
+                                </button>
+                                <button
+                                    class="rounded-circle arrow-icon-span d-flex justify-content-center align-items-center user-pop-follow-btn-two"><i
+                                        class="fa-solid fa-regular fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Modal end-->
+
+
+
+            <div class="col-lg-4">
+                <div class="live-comment-wrapper position-relative">
+                    <!-- tabs start -->
+                    <ul id="tabs-nav" class="list-unstyled d-flex streaming_tab justify-content-between">
+                      
+                        <li><a href="#tab1" class="text-white">Setting</a></li>
+						  <li><a href="#tab2" class="text-white">Comment</a></li>
+                        
+                    </ul> 
+
+                    <div id="tabs-content">
+                        <div id="tab1" class="tab-content">
+							<div class="follow-information startLive-Radius-bottom">
+                    <h4>Live Stream information</h4>
+                    <h6 class="text-white">URL</h6>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-white example-startLive text-decoration-underline col-lg-11">
+                            <input type="text" name="" id="" placeholder="http://example.com/1/1/1/1/1" class="startAnchor-Input w-100">
+                        </div>
+                        <a href="" class="col-lg-1">
+                            <svg id="content_copy_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Group_800" data-name="Group 800" fill="#ffffff">
+                                    <rect id="Rectangle_609" data-name="Rectangle 609" width="24" height="24" fill="none"></rect>
+                                </g>
+                                <g id="Group_801" data-name="Group 801" fill="#ffffff">
+                                    <path id="Path_799" data-name="Path 799" d="M15,20H5V7A1,1,0,0,0,4,6H4A1,1,0,0,0,3,7V20a2.006,2.006,0,0,0,2,2H15a1,1,0,0,0,1-1h0A1,1,0,0,0,15,20Zm5-4V4a2.006,2.006,0,0,0-2-2H9A2.006,2.006,0,0,0,7,4V16a2.006,2.006,0,0,0,2,2h9A2.006,2.006,0,0,0,20,16Zm-2,0H9V4h9Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+
+                    </div>
+                    <h6 class="text-white mt-2">Stream Key</h6>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-white example-startLive text-decoration-underline col-lg-11">
+                            <input type="text" name="" id="" placeholder="YAPP.333.11.3" class="startAnchor-Input w-100">
+                        </div>
+                        <svg id="content_copy_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g id="Group_800" data-name="Group 800" fill="#ffffff">
+                                <rect id="Rectangle_609" data-name="Rectangle 609" width="24" height="24" fill="none">
+                                </rect>
+                            </g>
+                            <g id="Group_801" data-name="Group 801" fill="#ffffff">
+                                <path id="Path_799" data-name="Path 799" d="M15,20H5V7A1,1,0,0,0,4,6H4A1,1,0,0,0,3,7V20a2.006,2.006,0,0,0,2,2H15a1,1,0,0,0,1-1h0A1,1,0,0,0,15,20Zm5-4V4a2.006,2.006,0,0,0-2-2H9A2.006,2.006,0,0,0,7,4V16a2.006,2.006,0,0,0,2,2h9A2.006,2.006,0,0,0,20,16Zm-2,0H9V4h9Z">
+                                </path>
+                            </g>
+                        </svg>
+
+
+                    </div>
+                </div>
+				
+				
+				<div class="follow-information startLive-Radius-bottom mt-3">
+                    <h4>Live setting</h4>
+                    <h5 class="text-white">Title</h5>
+                    <input type="text" placeholder="Add Title....." class="startLive-input">
+                    <h5 class="text-white pt-2 pb-2">Category</h5>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected="">Category</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="start-dotted-border add-vj-cover col-lg-4 mt-3">
+					    <img src="Images/vj-cover.png" alt="">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="header_search mt-3 mb-1">
+
+
+                        <input type="text" placeholder="Add live cover" class="rounded-5 color-eidt-placeholder start-Live_placeholder">
+                        <button class="header-search-icon eidt-additional">
+                            <h5 class="pink-span d-flex justify-content-center align-items-center rounded-5 eidt-span mb-0 startLive-Heading_size">
+                                Choose image</h5>
+                        </button>
+                    </div>
+                </div>
+						</div>
+                        <div id="tab2" class="tab-content">
+                             <div class="tabs-inners">
+                <div class="live-comment-wrapper position-relative">
+                    
+                    <div class="comment mt-3">
+                        <div class="ps-2 pt-2 pb-2">
+                            <p>comment</p>
+                        </div>
+                        <div class="vip-wrapper larg-comment-h">
+                            <div class="vip d-flex justify-content-between ps-2 pe-2 pt-0 pb-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3 align-content-center">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                                <!-- Modal report user start-->
+
+                                <div class="modal fade" id="reportuser" tabindex="-1" aria-labelledby="reportuser" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content slect_modal">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Report</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>What is the issue?</h5>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected="">Select the reason</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <h5 class="mt-4 mb-2">Message</h5>
+                                                <textarea name="" id="livetextarea" cols="63" rows="5" placeholder="Add message"></textarea>
+                                                <div class="header_search shadow-edit mt-4">
+
+
+                                                    <input type="text" placeholder="Upload photo or video" class="rounded-5 color-eidt-placeholder">
+                                                    <button class="header-search-icon eidt-additional">
+                                                        <h5 class="pink-span d-flex justify-content-center align-items-center rounded-5 eidt-span mb-0">
+                                                            Choose file</h5>
+                                                    </button>
+                                                </div>
+                                                <div class="d-flex gap-lg-2 pb-2 text-center mt-4">
+                                                    <div class="live-btn col-lg-6 pt-3 col-6">
+                                                        <a href="" class="text-decoration-none  side-btn-live rounded-5 d-block animation-conf">Send
+                                                            report
+                                                        </a>
+                                                    </div>
+                                                    <div class="live-btn col-lg-6 pt-3 col-6">
+                                                        <a href="" class="text-decoration-none  animation-cancel rounded-5 d-block">Cancel
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal report user end-->
+                            </div>
+                            <div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+                           <div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+							<div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+							<div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+							<div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+							<div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+							<div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+							<div class="vip d-flex justify-content-between p-2 gap-3">
+                                <div class="vip-borderRadius">
+                                    <img src="Images/blond-girls.png" alt="" class="live-comment-user-picture">
+                                </div>
+                                <div class="user-vip">
+                                    <div class="d-flex justify-content-between gap-3">
+                                        <a href="" class="font-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">User0001</a>
+                                        <div class="nested-flex d-flex align-items-center gap-2">
+                                            <span class="vip-font-span"><i class="fa-solid fa-circle-user"></i></span>
+                                            <p class="comment-user">User0001</p>
+                                        </div>
+                                        <p class="">VIP</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="d-flex flex-column  align-items-center ms-auto">
+                                    <a href="" class="dropdown text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownMenueLive" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportuser">Report user</a></li>
+                                        <li><a class="dropdown-item" href="#">View profile</a></li>
+                                        <li><a class="dropdown-item red-itemdropdown" href="#">Ban user</a></li>
+                                    </ul>
+                                    <img src="Images/heart.svg" alt="" class="cursor mt-2">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- hamburger start -->
+                    <div class=" pt-3 pb-2 live-bottom-comment">
+                        <div class="header_search  bg-blur">
+
+
+                            <input type="text" placeholder="Add comment" class="rounded-5">
+                            <button class="header-search-icon live-comment-btn">
+                                <span class="pink-span d-flex justify-content-center align-items-center rounded-5"><i class="fa-solid fa-arrow-up"></i></span>
+                            </button>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+                       
+						</div>
+                        
+                    </div>
+                    <!-- tabs end -->
+                    
+                    
+                       
+                        
+                    </div>
+                    <!-- hamburger end -->
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Report Modal -->
+                        <div class="modal fade" id="selectmodal" tabindex="-1" aria-labelledby="selectmodal"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content slect_modal">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Report</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5>What is the issue?</h5>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select the reason</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <h5 class="mt-4 mb-2">Message</h5>
+                                        <textarea name="" id="livetextarea" cols="63" rows="5"
+                                            placeholder="Add message"></textarea>
+                                        <div class="header_search shadow-edit mt-4">
+
+
+                                            <input type="text" placeholder="Upload photo or video"
+                                                class="rounded-5 color-eidt-placeholder">
+                                            <button class="header-search-icon eidt-additional">
+                                                <h5
+                                                    class="pink-span d-flex justify-content-center align-items-center rounded-5 eidt-span mb-0">
+                                                    Choose file</h5>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex gap-lg-2 pb-2 text-center mt-4">
+                                            <div class="live-btn col-lg-6 pt-3 col-6">
+                                                <a href=""
+                                                    class="text-decoration-none  side-btn-live rounded-5 d-block animation-conf">Send
+                                                    report
+                                                </a>
+                                            </div>
+                                            <div class="live-btn col-lg-6 pt-3 col-6">
+                                                <a href=""
+                                                    class="text-decoration-none  animation-cancel rounded-5 d-block">Cancel
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Report Modal -->
+
+<!-- vip side Modal -->
+<div class="live-vip-become ps-3 pe-3 model-left">
+<div class="text-end mt-5">
+<button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+                        <h2 class="pt-5">Become VIP</h2>
+                        <h5>For Use0001</h5>
+                        <div class="overflow-hidden live-Radius">
+                            <img src="Images/Cosplay VJ.png" alt="" width="118px" height="118px">
+                        </div>
+                        <p class="pt-3">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        </p>
+                        <p>199 THB/month</p>
+                        <div class="mt-5 pb-2">
+                            <div class="live-btn pb-4">
+                                <a href="" class="text-decoration-none  side-btn-live rounded-5 text-center d-block mx-auto w-100">Confirm
+                                </a>
+                            </div>
+                            <button class="btn rounded-5 view_all animatin-btn d-block mx-auto w-100" data-bs-toggle="modal" data-bs-target="#selectuser">
+                                <span class="ps-3">Cancel</span>
+                            </button>
+                        </div>
+                    </div>
+<!-- vip side Modal -->
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Show the first tab and hide the rest
+        $('#tabs-nav li:first-child').addClass('active');
+        $('.tab-content').hide();
+        $('.tab-content:first').show();
+        
+        // Click function
+        $('#tabs-nav li').click(function(){
+          $('#tabs-nav li').removeClass('active');
+          $(this).addClass('active');
+          $('.tab-content').hide();
+          
+          var activeTab = $(this).find('a').attr('href');
+          $(activeTab).fadeIn();
+          return false;
+        });
+        </script>
+
+
+
+
+
+
+<script src="js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
